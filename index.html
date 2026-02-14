@@ -6,19 +6,23 @@
     <title>أكاديمية دكتور مصعب | الصفحة الرئيسية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Cairo', sans-serif; }</style>
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+    </style>
 </head>
 <body class="bg-gray-50 text-right">
 
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-600"></div>أكاديمية دكتور مصعب</div>
+            <div class="text-2xl font-bold text-blue-600">أكاديمية دكتور مصعب</div>
             
             <div class="hidden md:flex space-x-reverse space-x-8">
-                <a href="index.html" class="text-blue-600 font-bold border-b-2 border-blue-600">الرئيسية</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition">الدورات</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition">المقالات</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition">تواصل معنا</a>
+                <a href="#home" class="text-blue-600 font-bold border-b-2 border-blue-600 transition">الرئيسية</a>
+                <a href="#courses" class="text-gray-600 hover:text-blue-600 transition">الدورات</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">من نحن</a>
+                <a href="https://wa.me/249XXXXXXXXX" target="_blank" class="text-green-600 font-bold hover:text-green-700 transition flex items-center gap-1">
+                    تواصل معنا (واتساب)
+                </a>
             </div>
 
             <div class="flex gap-3">
@@ -29,18 +33,32 @@
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 text-center">
+    <header id="home" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 text-center">
         <div class="container mx-auto px-6">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">مرحباً بك في أكاديمية دكتور مصعب</h1>
             <p class="text-xl mb-10 text-blue-100 max-w-2xl mx-auto italic">انطلق في رحلة التعلم مع أفضل المناهج العربية المجانية والمعتمدة.</p>
             <div class="flex justify-center flex-wrap gap-4">
-                <button class="bg-yellow-500 text-blue-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 shadow-xl transition">تصفح الدورات</button>
-                <button class="border-2 border-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-900 transition">عن المنصة</button>
+                <a href="#courses" class="bg-yellow-500 text-blue-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 shadow-xl transition">تصفح الدورات</a>
+                <a href="#about" class="border-2 border-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-900 transition">عن المنصة</a>
             </div>
         </div>
     </header>
 
-    <section class="container mx-auto py-20 px-6">
+    <section id="about" class="container mx-auto py-20 px-6">
+        <div class="bg-white rounded-2xl p-10 shadow-sm border border-gray-100 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6 text-slate-800">عن أكاديمية دكتور مصعب</h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    نحن نسعى لتقديم محتوى تعليمي تقني متميز باللغة العربية، نركز على تبسيط المفاهيم المعقدة في البرمجة والتصميم لمساعدة الطلاب على دخول سوق العمل بكل ثقة. جميع دوراتنا مصممة بعناية لتواكب التطورات العالمية.
+                </p>
+            </div>
+            <div class="md:w-1/2 bg-blue-50 h-64 w-full rounded-xl flex items-center justify-center text-blue-200 font-bold text-2xl">
+                [صورة الأكاديمية]
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="container mx-auto py-10 px-6">
         <h2 class="text-3xl font-bold mb-12 text-slate-800 relative inline-block">
             أحدث الدورات المضافة
             <span class="block w-1/2 h-1 bg-blue-600 mt-2"></span>
@@ -72,6 +90,18 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">أكاديمية دكتور مصعب - تعليم بلا حدود</p>
+            <div class="flex justify-center gap-6 mb-8 text-gray-400">
+                <a href="#home" class="hover:text-white">الرئيسية</a>
+                <a href="#courses" class="hover:text-white">الدورات</a>
+                <a href="#about" class="hover:text-white">من نحن</a>
+            </div>
+            <p class="text-gray-500 text-sm">جميع الحقوق محفوظة © 2026</p>
+        </div>
+    </footer>
 
 </body>
 </html>
